@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import os
 
 def top_10_batsman_of_rcb(file_path):
-    with open (file_path,'r','utf-8') as file:
+    with open(file_path,'r',encoding='utf-8') as file:
         deliveries = csv.DictReader(file)
         res = {}
 
         for delivery in deliveries:
             batting_team = delivery['batting_team']
-            if batting_team == 'Royal  Challengers Banglore':
+            if batting_team == 'Royal Challengers Bangalore':
                 batsman = delivery['batsman']
                 batsman_runs = int(delivery['batsman_runs'])
                 if batsman not in res:

@@ -5,6 +5,8 @@ and plot the result as a bar chart.
 
 import csv
 import matplotlib.pyplot as plt
+plt.switch_backend('TkAgg')
+
 import os
 
 
